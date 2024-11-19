@@ -1,0 +1,40 @@
+# Ignore build directories
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore temporary files
+*.tmp
+*.log
+*.vs/
+
+# Ignore package directories
+.vs/
+.idea/
+.vscode/
+
+# Ignore system-specific files
+Thumbs.db
+.DS_Store
+
+# Ignore output files
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
+*.db
+*.zip
+
+# Ignore Rider and JetBrains-specific files
+.idea/
+.run/
+*.iml
+*.ipr
+*.iws
+
+# Rive dependencies
+runtimes/
