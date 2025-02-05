@@ -23,6 +23,7 @@ public class Game1 : Game
         _graphics.PreferredBackBufferWidth = 1920;
         _graphics.PreferredBackBufferHeight = 1080;
         _graphics.PreferredBackBufferFormat = SurfaceFormat.Alpha8;
+        //_graphics.IsFullScreen = true;
     }
 
     protected override void Initialize()
@@ -75,12 +76,6 @@ public class Game1 : Game
         {
             _riveTexture.SetData(pixmap.GetPixelSpan().ToArray());
         }
-
-        Color[] pixels = new Color[_riveTexture.Width * _riveTexture.Height];
-        _riveTexture.GetData(pixels);
-
-        // Check the red channel of the first pixel
-        Console.WriteLine($"Red: {pixels[0].R}, Green: {pixels[0].G}, Blue: {pixels[0].B}, Alpha: {pixels[0].A}");
 
         _spriteBatch.Begin();
         _spriteBatch.Draw(_riveTexture, new Vector2(0, 0), Color.White);

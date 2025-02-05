@@ -27,8 +27,13 @@
         <HintPath>Content/RiveSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
+    <ItemGroup>
+      <Reference Include="librive.so">
+        <HintPath>Content/librive.so</HintPath>
+      </Reference>
+  </ItemGroup>
   <ItemGroup>
-    <None Include="Content/roversketch_01.riv">
+    <None Include="Content/roversketch_02.riv">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
