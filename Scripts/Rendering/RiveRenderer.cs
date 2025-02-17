@@ -36,6 +36,7 @@ public class RiveRenderer
         Console.WriteLine($"Artboard loaded: {_scene.Name}");
 
         _scene.LoadStateMachine("State Machine 1");
+        
     }
 
     public void Update(double elapsedSeconds)
@@ -46,6 +47,7 @@ public class RiveRenderer
         {
             throw new Exception("Failed to advance animation");
         }
+
     }
 
     public SKImage Render()
